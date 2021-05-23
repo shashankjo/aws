@@ -1,0 +1,55 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "cloudformation:DetectStackSetDrift",
+                "cloudformation:DetectStackDrift",
+                "cloudformation:ListStackSetOperations",
+                "cloudformation:DescribeStackInstance",
+                "cloudformation:ListStackInstances",
+                "cloudformation:DescribeStackResources",
+                "cloudformation:DescribeStackResource",
+                "cloudformation:GetTemplateSummary",
+                "cloudformation:DescribeStacks",
+                "cloudformation:ListStackSetOperationResults",
+                "cloudformation:DetectStackResourceDrift",
+                "cloudformation:DescribeStackResourceDrifts",
+                "cloudformation:GetStackPolicy",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:DescribeStackSet",
+                "cloudformation:ListStackSets",
+                "cloudformation:GetTemplate",
+                "cloudformation:DescribeStackSetOperation",
+                "cloudformation:DescribeChangeSet",
+                "cloudformation:ListChangeSets",
+                "cloudformation:ListStackResources"
+            ],
+            "Resource": [
+                "arn:aws:cloudformation:*:896194648753:stack/*/*",
+                "arn:aws:cloudformation:*:896194648753:stackset/*/*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "cloudformation:EstimateTemplateCost",
+                "cloudformation:DescribeStackDriftDetectionStatus",
+                "cloudformation:ListExports",
+                "cloudformation:ListStacks",
+                "cloudformation:DescribeType",
+                "cloudformation:ListImports",
+                "cloudformation:ListTypes",
+                "cloudformation:DescribeAccountLimits",
+                "cloudformation:DescribeTypeRegistration",
+                "cloudformation:ValidateTemplate",
+                "cloudformation:ListTypeRegistrations",
+                "cloudformation:ListTypeVersions"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
